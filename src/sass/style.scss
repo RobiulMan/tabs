@@ -1,0 +1,23 @@
+@import "reset";
+@import "reboot";
+@import "config";
+@import "mixin";
+
+@import "component/glass";
+
+body {
+  background: url(../images/main_bg.jpg) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.continer {
+  width: 80vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+}
+
+@import "responsiv";

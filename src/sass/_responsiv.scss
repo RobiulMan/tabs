@@ -1,0 +1,99 @@
+/*
+* Mordan breakpoint
+*
+*/
+// @import "./src/sass/component/glass";
+
+@media (max-width: 43.75em) {
+  //700px
+  body {
+    background-size: auto;
+    background-position: top center;
+  }
+  .continer {
+    width: 80%;
+    height: 100%;
+  }
+  .tab__btn__continer {
+    // display: flex;
+    flex-direction: column;
+    .btn__item {
+      margin-bottom: 0.4em;
+      &::after {
+        border: none;
+      }
+      span {
+        font-size: 0.7em;
+      }
+    }
+    #select {
+      position: relative;
+      margin-bottom: 30em;
+    }
+  }
+
+  //text body
+
+  .tab__body {
+    &__continer {
+      .tab__body__item {
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        &__image {
+          align-self: center;
+          img {
+            width: 80%;
+          }
+        }
+        &__text {
+          &__title {
+            font-size: 1em;
+          }
+          &__pra {
+            font-size: 0.7em;
+          }
+        }
+      }
+
+      #active:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -125%);
+      }
+      #active:nth-child(2) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+      }
+      #active:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+      }
+      #active:nth-child(4) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+      }
+      #active:nth-child(5) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 62em) {
+  //992px
+}
+
+@media (max-width: 87em) {
+  //1392px
+}
